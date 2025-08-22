@@ -150,13 +150,7 @@ const App = () => {
             <div className="item item2">{v.todo}</div>
             <div className="item item3">
               <div className="item3-child">{v.date}</div>
-              <div className="item3-child">
-                {new Date(`1970-01-01T${v.time}`).toLocaleTimeString([], { 
-    hour: "2-digit", 
-    minute: "2-digit", 
-    hour12: true 
-  })}
-              </div>
+              <div className="item3-child">{new Date(`1970-01-01T${v.time}`).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true }).toUpperCase()}</div>
             </div>
             <div className="item item4">
               <div className="item4-child"><div onClick={() => { handleDone(v.id) }}>{v.done ? <MdCancel className="d1"/>
