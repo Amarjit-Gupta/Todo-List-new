@@ -1,0 +1,155 @@
+
+*{margin: 0px;padding: 0px;}
+html{font-size: 10px;}
+
+
+.image{height:100vh;width: 100%;background-color:black;z-index: 9999;position: fixed;top:0rem;display: flex;justify-content: center;align-items: center;}
+
+.image img{height: 18rem;width: 24rem;}
+
+body,.m1 {
+    background-color: pink;
+    animation-name: hello;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes hello {
+    0% {
+        background-color: rgb(178, 237, 237);
+    }
+  
+    25% {
+        background-color: rgb(241, 241, 191);
+    }
+  
+    50% {
+        background-color: rgb(215, 235, 184);
+    }
+  
+    75% {
+        background-color: rgb(198, 234, 162);
+    }
+  
+    100% {
+        background-color: rgb(178, 237, 237);
+    }
+}
+
+
+
+
+
+.heading{text-align: center;font-size: 5rem;font-weight: bold;margin-top: 2rem;color:cornflowerblue;} 
+
+
+.main1 {
+    border: rgb(179, 177, 177) solid 0.2rem;
+    width: 50rem;
+    margin:auto;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+}
+
+.m1{position: sticky;top:0rem;border-radius: 1.5rem;padding-bottom: 0.5rem;}
+
+.p1 {
+    text-decoration: line-through;color: red;
+}
+
+
+.main {
+    width: 49.7rem;
+    background-color: rgb(145, 237, 145);
+    display: grid;
+    grid-template-columns: 7rem 22rem 1fr 1fr;
+    grid-template-rows: 1fr 4rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    font-size: 2.5rem; 
+    border:green solid 0.2rem;
+    border-radius:1.5rem;
+}
+
+.item {
+    background-color:rgb(145, 237, 145);
+    border-radius:1.5rem;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 2.5rem;
+    padding: 0.5rem;
+    
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding: 0.5rem;
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+}
+
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item3-child {
+    width: 50%;
+    height: 100%;
+    font-size: 2rem;
+    background-color: rgb(145, 237, 145);
+}
+
+.b1{color:pink;}
+.b2{color:green;}
+
+.item4-child {
+    width: 2.5rem;
+    height: 80%;
+    background-color: rgb(145, 237, 145);
+    display: flex;justify-content: center;align-items: center;
+}
+
+.delbtn{height: 2.5rem;width: 4rem;color: red;font-size:2rem;cursor: pointer;}
+.delbtn:hover{color: rgb(169, 6, 6);}
+.d1{height: 2.5rem;width: 4rem;color:red;font-size:2rem;cursor: pointer;}
+.d2{height: 2.5rem;width: 4rem;color: green;font-size:2rem;cursor: pointer;}
+.e1{height: 2.2rem;}
+
+form{margin:2.5rem 0rem 3.5rem 0rem;position: sticky;top:10rem;display: flex;align-items: center;}
+
+input[type="text"]{
+    height:5rem;width: 80%;
+    border-radius:1rem 0rem 0rem 1rem;
+    border:green solid 0.2rem;
+    padding:0rem 0.5rem 0rem 0.5rem;
+    font-size: 2.5rem;
+    color: red;
+}
+
+.btn{height: 5rem;width:18%;border-radius:0rem 1rem 1rem 0rem;font-size: 2rem;background-color: rgb(136, 244, 136);border: green solid 0.2rem;}
+.btn:hover{background-color:rgb(74, 240, 74);}
+
+.bt{width:12rem;margin: 2.7rem auto 1rem auto;}
+
+.btn1{height:3.5rem;width: 12rem;font-size:2rem;border-radius:0.8rem;border: red solid 0rem;background-color: rgb(238, 17, 17);color: white;}
+.btn1:hover{background-color: rgb(220, 17, 17);}
+
+@media only screen and (max-width:55rem){
+     html{font-size: 6.3px;}
+}
