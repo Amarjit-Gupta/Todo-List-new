@@ -136,7 +136,7 @@ const App = () => {
     <div className="main1">
       <ToastContainer />
       <div className='m1'>
-        <p className="heading">Todo List</p>
+        <p className="heading">Todo List 01</p>
         <form onSubmit={handleSubmit}>
           <input type="text" value={input} onChange={(event) => setInput(event.target.value)} placeholder="Enter task here..." />
           <button className="btn">{btn ? "Update" : "Add"}</button>
