@@ -5,7 +5,7 @@ html{font-size: 10px;}
 
 .image img{height: 18rem;width: 24rem;}
 
-body {
+body,.m1{
     background-color: pink;
     animation-name: hello;
     animation-duration: 7s;
