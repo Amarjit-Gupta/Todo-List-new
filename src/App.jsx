@@ -150,7 +150,7 @@ const App = () => {
             <div className="item item2">{v.todo}</div>
             <div className="item item3">
               <div className="item3-child">{v.date}</div>
-              <div className="item3-child" style={{border:"red solid 2px"}}>{v.time}</div>
+              <div className="item3-child">{v.time}</div>
             </div>
             <div className="item item4">
               <div className="item4-child"><div onClick={() => { handleDone(v.id) }}>{v.done ? <MdCancel className="d1"/>
